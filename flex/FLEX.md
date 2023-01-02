@@ -4,7 +4,7 @@ Website templates using css flexbox.
 
 ## Description
 
-* The `layout1.html` template renders `header, body, and footer` elements. In here we haven't used `body` element for making flexible layout that's why we had to subtract `header` and `footer` width manually.
+* The `layout1.html` template renders `header, body, and footer` elements. In here we haven't used `body` element for making flexible layout that's why we had to subtract `header` and `footer` height manually.
 
 Here is the CSS snippet for making this layout:
 
@@ -16,7 +16,7 @@ header {
 
 main {
   display: flex;
-  /* Subtract header and footer width manually */
+  /* Subtract header and footer height manually */
   min-height: calc(100vh - 40vh);
   /* other main content styles go here */
 }
