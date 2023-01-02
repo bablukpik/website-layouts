@@ -10,7 +10,7 @@ Here is the CSS snippet for making this layout:
 
 ```
 header {
-  flex: 0 0 20vw;
+  flex: 0 0 20vh;
   /* other header styles go here */
 }
 
@@ -22,7 +22,7 @@ main {
 }
 
 footer {
-  flex: 0 0 20vw;
+  flex: 0 0 20vh;
   /* other footer styles go here */
 }
 ```
