@@ -1,10 +1,10 @@
 # Website Layouts
 
-Website layouts using css flexbox and Grid.
+Website layouts using css Flexbox and Grid.
 
 ## Description
 
-This is a collection of different types of website layouts using html and css.
+This is a collection of different types of website layouts using html and css. Here is the [documentation](https://github.com/bablukpik/website-layouts/blob/main/flex/FLEX.md#flexbox-layouts) for flex layouts and the [documentation](https://github.com/bablukpik/website-layouts/blob/main/grid/GRID.md#grid-layouts) is for grid layouts.
 
 ## Authors
 
