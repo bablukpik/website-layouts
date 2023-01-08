@@ -4,13 +4,13 @@ Website templates using css flexbox.
 
 ## Description
 
-* The `layout1.html` template renders `header, body, and footer` elements. In this variation we haven't used `body` element for making flexible layout that's why we had to subtract `header` and `footer` height manually.
+* The `layout1.html` template renders `header, body, sidebar, and footer` elements. In this variation we have used flex's default direction `row` for making flexible layout and `header` & `footer` are set with `min-height` value that's why we had to subtract `header` and `footer` heights manually.
 
 Here is the CSS snippet for making this layout:
 
 ```
 header {
-  flex: 0 0 20vh;
+  min-height: 20vh;
   /* other header styles go here */
 }
 
@@ -22,7 +22,7 @@ main {
 }
 
 footer {
-  flex: 0 0 20vh;
+  min-height: 20vh;
   /* other footer styles go here */
 }
 ```
@@ -54,7 +54,7 @@ footer {
 }
 ```
 
-* The `layout3.html` template renders `header, body, and footer` elements too. We're going to improve the `layout2.html` a bit by replacing the `body` element with a div element.
+* The `layout3.html` template renders `header, body, and footer` elements too. We're going to improve the `layout2.html` a bit by replacing the `body` element with a `div` element.
 
 Here is the CSS snippet for making this layout:
 
@@ -80,3 +80,8 @@ footer {
   /* other footer styles go here */
 }
 ```
+
+## Don't
+
+* Don't use fixed `height` for locking element's height, use `min-height` instead
+* Don't use fixed `width` for locking element's width, use `max-width` instead
