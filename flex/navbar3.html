@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar 2</title>
+  <title>Navbar 3</title>
   <style>
     * {
       margin: 0;
@@ -23,6 +23,8 @@
       flex: 0 0 auto;
       background-color: lightblue;
       padding: 20px;
+      display: flex;
+      justify-content: flex-end;
     }
 
     main {
@@ -69,11 +71,19 @@
       border-radius: 5px;
       color: #f9f5f5;
     }
+
+    .logo {
+      /* it pushes all way to left */
+      margin-right: auto;
+    }
   </style>
 </head>
 
 <body>
   <header>
+    <div class="logo">
+      <p>Logo</p>
+    </div>
     <nav class="menu">
       <ul class="nav-list">
         <li class="nav-item"><a href="#">Home</a></li>

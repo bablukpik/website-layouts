@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Example 1.2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #333;
+      /* top & bottom = 10px, right & left = 20px */
+      padding: 10px 20px;
+    }
+
+    header img {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+    }
+
+    header form {
+      display: flex;
+      align-items: center;
+    }
+
+    header form input[type='text'] {
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      margin-right: 10px;
+      flex: 1;
+    }
+
+    header form button[type='submit'] {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    header form button[type='submit']:hover {
+      background-color: #555;
+    }
+
+    /* Navigation */
+    nav {
+      color: #fff;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      margin-right: 10px;
+      padding: 10px;
+    }
+
+    nav a:last-child {
+      margin-right: 0;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-right: 10px;
+    }
+
+    nav ul li:last-child {
+      margin-right: 0
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="logo.svg" alt="Company Logo">
+    <form action="/search" method="get">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </form>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+</body>
+
+</html>
