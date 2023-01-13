@@ -63,12 +63,7 @@
     nav a {
       text-decoration: none;
       color: #fff;
-      margin-right: 10px;
       padding: 10px;
-    }
-
-    nav a:last-child {
-      margin-right: 0;
     }
 
     nav a:hover {
@@ -78,21 +73,14 @@
     nav ul {
       display: flex;
       list-style: none;
-    }
-
-    nav ul li {
-      margin-right: 10px;
-    }
-
-    nav ul li:last-child {
-      margin-right: 0
+      gap: 10px;
     }
   </style>
 </head>
 
 <body>
   <header>
-    <img src="logo.svg" alt="Company Logo">
+    <img src="./images/logo.png" alt="Logo">
     <form action="/search" method="get">
       <input type="text" placeholder="Search...">
       <button type="submit">Search</button>
