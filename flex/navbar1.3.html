@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navigation Example 1.2</title>
+  <title>Navigation Example 1.3</title>
   <style>
     * {
       margin: 0;
@@ -28,6 +28,13 @@
       min-height: 50px;
     }
 
+    header .search input {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
     /* Navigation */
     nav {
       color: #fff;
@@ -36,7 +43,6 @@
     nav a {
       text-decoration: none;
       color: #fff;
-      /* for showing background color while hovering */
       padding: 10px;
     }
 
@@ -50,7 +56,6 @@
       list-style: none;
       gap: 10px;
     }
-
   </style>
 </head>
 
@@ -58,6 +63,11 @@
   <header>
     <div class="logo">
       <img src="./images/logo.png" alt="Logo">
+    </div>
+    <div class="search">
+      <form action="/search" method="get">
+        <input type="text" placeholder="Search...">
+      </form>
     </div>
     <nav>
       <ul>

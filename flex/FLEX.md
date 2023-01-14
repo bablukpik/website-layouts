@@ -59,7 +59,7 @@ footer {
 Here is the CSS snippet for making this layout:
 
 ```
-.app {
+.app-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -85,3 +85,5 @@ footer {
 
 * Don't use fixed `height` for locking element's height, use `min-height` instead
 * Don't use fixed `width` for locking element's width, use `max-width` instead
+* Don't use `width: 100%` for full-width image, use `max-width: 100%` then it'll not create overflow in small screen sizes
+* Don't use `max-width` in the media query, use `min-width` which is mobile first approach, it'll reduce complexities
